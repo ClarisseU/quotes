@@ -7,9 +7,17 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    {quote:'Do not cry because it is over, smile because it happened.', name:'Watch finding Nemo',author:'Dr. Seuss'},
-    {quote:'Do not cry because it is over, smile because it happened.', name:'Watch finding Nemo',author:'Dr. Seuss'},
+    new Quote('Do not cry because it is over, smile because it happened','Watch finding Nemo', 'Dr. Seuss'),
+    new Quote( 'Do not cry because it is over, smile because it happened','Watch finding Nemo', 'Dr. Seuss'),
   ];
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  completeQuote(isComplete, index){
+    if(isComplete){
+      this.quotes.splice(index,1)
+    }
+  }
   constructor() { }
 
   ngOnInit() {

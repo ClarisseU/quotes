@@ -7,8 +7,5 @@ import { Quote } from './quote'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes:Quote[] = [
-    {quote:'Do not cry because it is over, smile because it happened.', name:'Watch finding Nemo',author:'Dr. Seuss'},
-    {quote:'Do not cry because it is over, smile because it happened.', name:'Watch finding Nemo',author:'Dr. Seuss'},
-  ];
+  quotes:Quote[] ;
 }
