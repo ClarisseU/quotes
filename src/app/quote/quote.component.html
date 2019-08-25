@@ -2,8 +2,9 @@
     <h1>My Quotes</h1>
     <hr>
     <ul>
-        <li *ngFor='let quote of quotes'>
-            {{quote.name}}</li>
+        <div *ngFor='let quo of quotes; let i = index'>
+            <li HighlightDirective> {{quo.quote}} added on {{quo.completeDate|date|lowercase}}</li>
+        </div>
         <button (click)='toggleDetails(i)'>Toggle Details</button>
         <app-quote-detail [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-detail>
 
