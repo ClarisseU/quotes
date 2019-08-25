@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
-import { Quote } from './quote'
-
+import { Component, OnInit } from '@angular/core';
+import { Quote } from '../quote'
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-quote',
+  templateUrl: './quote.component.html',
+  styleUrls: ['./quote.component.css']
 })
-export class AppComponent {
+export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
     {quote:'Do not cry because it is over, smile because it happened.', name:'Watch finding Nemo',author:'Dr. Seuss'},
     {quote:'Do not cry because it is over, smile because it happened.', name:'Watch finding Nemo',author:'Dr. Seuss'},
   ];
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }
