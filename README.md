@@ -37,7 +37,7 @@ The name of the author, the name of the person entering a quote and finally the 
 the project displays the quotes that the user has entered.a pipe date count that displays how much time has passed since the quote has been created.
 
 ## License
-all rights reserved @copyright 2019
+MIT license all rights reserved @copyright 2019
 
 ## Author
 Clarisse U.
