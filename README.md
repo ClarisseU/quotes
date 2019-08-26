@@ -36,6 +36,9 @@ The name of the author, the name of the person entering a quote and finally the 
 ### Output
 the project displays the quotes that the user has entered.a pipe date count that displays how much time has passed since the quote has been created.
 
+## Errors known
+I failed to link bootstrap completely due to an error that appeared and i could hundle it this caused me not to style my page.
+
 ## License
 MIT license all rights reserved @copyright 2019
 
