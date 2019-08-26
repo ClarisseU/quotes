@@ -5,10 +5,12 @@
         <div class="col-md-6">
             <div *ngFor='let quo of quotes; let i = index'>
                 <h6 HighlightDirective> {{quo.quote}} added on {{quo.completeDate|date|lowercase}}</h6>
+                <app-quote-detail [quote]='quo' (isComplete)='completeQuote($event,i)' *ngIf='quo.showDescription'></app-quote-detail>
+                <button (click)='toggleDetails(i)'>Quote Details</button>
             </div>
             <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
-            <app-quote-detail [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-detail>
-            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+
+            <!-- <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail> -->
         </div>
         <div class="col-md-6">
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
