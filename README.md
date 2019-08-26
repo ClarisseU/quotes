@@ -34,7 +34,7 @@ The user enters the quote that he wants to add, he enters his name and the name 
 The name of the author, the name of the person entering a quote and finally the quote that he's adding.
 
 ### Output
-the project displays the quotes that the user has entered.
+the project displays the quotes that the user has entered.a pipe date count that displays how much time has passed since the quote has been created.
 
 ## License
 all rights reserved @copyright 2019
