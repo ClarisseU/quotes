@@ -3,7 +3,8 @@
 </p>
 <p>{{quote.quote}}</p>
 <p>This goal will be complete in {{quote.completeDate|dateCount}} days</p>
-<p>{{upvote}}</p>
+<p>upvotes {{upvote}}</p>
+<p>downvotes {{downvote}}</p>
 <button (click)="quoteUpvote()" class="btn btn-outline-danger">Up vote</button><br>
 <button (click)="quoteDownvote()" class="btn btn-outline-danger">Down vote</button><br>
 <button (click)="quoteComplete (true)" class="btn btn-outline-danger">Delete quote</button><br>
