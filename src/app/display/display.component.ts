@@ -8,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class DisplayComponent implements OnInit {
 
   constructor() { }
+  upvote = 0;
+  downvote =0;
+   quoteUpvote(){
+     this.upvote++;
+   }
+   quoteDownvote(){
+     this.downvote++;
+   }
 
   ngOnInit() {
   }
