@@ -2,9 +2,11 @@
     {{quote.quote}}
 </p>
 <p>{{quote.quote}}</p>
+<!-- a custom pipe to display the days since the quote has been created -->
 <p>The quote was created on {{quote.completeDate|date}} days</p>
+<!-- the initial upvotes and downvotes -->
 <p>upvotes {{upvote}}</p>
 <p>downvotes {{downvote}}</p>
-<button (click)="quoteUpvote()" class="btn btn-outline-danger">Up vote</button><br>
-<button (click)="quoteDownvote()" class="btn btn-outline-danger">Down vote</button><br>
-<button (click)="quoteComplete (true)" class="btn btn-outline-danger">Delete quote</button><br>
+<button (click)="quoteUpvote()" class="btn btn-warning" btn-sm>Up vote</button><br>
+<button (click)="quoteDownvote()" class="btn btn-warning" btn-sm>Down vote</button><br>
+<button (click)="quoteComplete (true)" class="btn btn-warning">Delete quote</button><br>
