@@ -8,7 +8,7 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
     new Quote('Do not cry because it is over, smile because it happened','Watch finding Nemo', 'Dr. Seuss',new Date(2019,3,14)),
-    new Quote( 'Do not cry because it is over, smile because it happened','Watch finding Nemo', 'Dr. Seuss',new Date(2019,3,14)),
+    new Quote( 'The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.','Watch finding Nemo', 'Mark Caine',new Date(2019,3,14)),
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
