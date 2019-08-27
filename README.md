@@ -26,9 +26,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Technologies used
+Angular CLI, Bootstrap.
+
 ## Behaviour Driven Development
 ### Behaviour
-The user enters the quote that he wants to add, he enters his name and the name of the author then adds the goal, the user has also the ability of deleting a quote
+The user enters the quote that he wants to add, he enters his name and the name of the author then adds the goal, the user has also the ability of deleting a quote.
 
 ### Input
 The name of the author, the name of the person entering a quote and finally the quote that he's adding.
@@ -40,7 +43,7 @@ the project displays the quotes that the user has entered.a pipe date count that
 I failed to link bootstrap completely due to an error that appeared and i could hundle it this caused me not to style my page.
 
 ## License
-MIT license all rights reserved @copyright 2019
+MIT license all rights reserved @copyright 2019.
 
 ## Author
 Clarisse U.
